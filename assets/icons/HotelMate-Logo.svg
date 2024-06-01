@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="135.16" height="28" viewBox="0 0 135.16 28">
+  <g id="HotelMate-Logo" transform="translate(-304.84 -26)">
+    <g id="_2848875_map_location_pin_icon" data-name="2848875_map_location_pin_icon" transform="translate(189.74 -31.5)">
+      <path id="Path_1" data-name="Path 1" d="M125.179,57.514a.781.781,0,0,0-.134-.014l-.141.014A10.482,10.482,0,0,0,117.8,75l1.051,1.1A33.017,33.017,0,0,1,124.9,85.14a2.48,2.48,0,0,1,.134.36l.141-.381a32.972,32.972,0,0,1,6.044-9.021l1.051-1.1a10.476,10.476,0,0,0-7.1-17.484Zm-.247,16.92a6.009,6.009,0,1,1,6.009-6.009A6.009,6.009,0,0,1,124.932,74.434Z" transform="translate(0 0)" fill="#495e57"/>
+      <path id="Path_2" data-name="Path 2" d="M213.768,178.011c-.719-.444-2.208-1.121-2.835.275-.529,1.157-.451,2.546,2.68,4.006a1.127,1.127,0,0,0,.162.071c.056-.021.106-.049.162-.071,3.124-1.467,3.209-2.856,2.68-4.006C215.982,176.89,214.494,177.567,213.768,178.011Z" transform="translate(-88.843 -111.491)" fill="#495e57"/>
+    </g>
+    <text id="HotelMate" transform="translate(335 47)" fill="#495e57" font-size="20" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">HotelMate</tspan></text>
+  </g>
+</svg>
