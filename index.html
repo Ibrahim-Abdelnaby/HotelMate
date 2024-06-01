@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotelMate | CRUD Hotel Management System</title>
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand me-5" href="#"><img src="assets/icons/HotelMate-Logo.svg" alt="HotelMate Logo"></a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item text-center">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" aria-current="page" href="#">Hotels</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" aria-current="page" href="#">Careers</a>
+                    </li>
+                </ul>
+                <div class="text-center">
+                    <button class="btn btn-primary rounded-0 px-4 fw-semibold">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Grid Layout -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <!-- Left Column -->
+                <div id="left" class="col-md-5 d-flex">
+                    <aside id="dataIntery" class="flex-grow-1 position-sticky top-0 start-0 vh-100">
+                        <!-- title -->
+                        <div class="title">
+                            <h1 class="fs-3 text-primary">Hotel Management System</h1>
+                        </div>
+                        <!-- upload an image -->
+                        <div class="upload-image position-relative mt-5 mb-4">
+                            <input type="file" id="customFileInput">
+                            <img class="position-absolute start-50 translate-middle-x" src="assets/icons/upload.svg"
+                                alt="">
+                            <label class="w-100 h-100 d-flex justify-content-center align-items-end pb-4 fw-semibold"
+                                for="customFileInput" id="customFileLabel">Upload an Image</label>
+                        </div>
+                        <!-- Hotel Overview -->
+                        <div class="hotel-overview">
+                            <h2 class="fs-5 mb-3">Hotel Overview</h2>
+                            <input type="email" class="form-control py-3 mb-3" id="exampleFormControlInput1"
+                                placeholder="Enter Hotel Name">
+                            <select class="form-select py-3 mb-3" aria-label="Default select example">
+                                <option selected class="selected">Select the Hotel Stare Rating</option>
+                                <option value="1">1.0 Stars</option>
+                                <option value="2">2.0 Stars</option>
+                                <option value="3">3.0 Stars</option>
+                                <option value="3">4.0 Stars</option>
+                                <option value="3">5.0 Stars</option>
+                            </select>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Enter a small Description"></textarea>
+                        </div>
+                        <!-- Hotel Features -->
+                        <div class="hotel-features my-4">
+                            <h2 class="fs-5 mb-3">Hotel Features</h2>
+                            <div class="checkboxes d-flex flex-wrap row-gap-3 column-gap-4">
+                                <div class="check">
+                                    <input type="checkbox" class="form-check-input form-check-inline shadow-none"
+                                        id="parking" name="parking">
+                                    <label for="parking" class="form-check-label">Free Parking</label>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" class="form-check-input form-check-inline shadow-none"
+                                        id="wifi" name="wifi">
+                                    <label for="wifi" class="form-check-label">Free Wi-Fi</label>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" class="form-check-input form-check-inline shadow-none"
+                                        id="fitness" name="fitness">
+                                    <label for="fitness" class="form-check-label">Fitness Center</label>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" class="form-check-input form-check-inline shadow-none"
+                                        id="breakfast" name="breakfast">
+                                    <label for="breakfast" class="form-check-label">Breakfast</label>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" class="form-check-input form-check-inline shadow-none"
+                                        id="restaurant" name="restaurant">
+                                    <label for="restaurant" class="form-check-label">Restaurant</label>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" class="form-check-input form-check-inline shadow-none"
+                                        id="airconditioned" name="airconditioned">
+                                    <label for="airconditioned" class="form-check-label">Air-conditioned</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Hotel Price -->
+                        <div class="hotel-prices mb-4">
+                            <h2 class="fs-5 mb-3">Hotel Prices</h2>
+                            <label for="priceRange" class="form-label">Price/Night</label>
+                            <input type="range" name="priceRange" id="priceRange" class="form-range">
+                        </div>
+                        <!-- Add Hotel Button -->
+                        <button class="btn btn-primary py-3 disabled"><i class="fas fa-plus me-2"></i>Add Hotel</button>
+                    </aside>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- Right Column -->
+                <div id="right" class="col-md-7 d-flex flex-column">
+                    <div class="search-sticky pb-3">
+                        <input type="search" class="form-control py-3 rounded-5 shadow-md" id="exampleFormControlInput1"
+                            placeholder="Search with hotel name...">
+                    </div>
+                    <section id="search" class="flex-grow-1 d-flex flex-column row-gap-5">
+                        <div class="card d-flex flex-row gap-4 bg-transparent border-0 position-relative">
+                            <div class="card-img rounded-4">
+                                <img src="assets/images/Oceanfront-Oasis.jpg" alt="" class="h-100">
+                            </div>
+                            <div class="card-content">
+                                <h2 class="fs-5 text-primary mb-0">Oceanfront Oasis, Maui, HI</h2>
+                                <div class="rating d-inline-flex gap-1">
+                                    <span>5.1</span><img src="assets/icons/5stars.svg" alt="">
+                                </div>
+                                <p class="mb-0 mt-2">Luxurious beachfront resort with private balconies and stunning ocean views.</p>
+                                <div class="price my-3 rounded-2 px-2 py-2">
+                                    <p class="mb-0 fw-bold fs-6">$400<span class="fs-6">/Night</span></p>
+                                </div>
+                                <div class="features d-flex flex-wrap column-gap-3 row-gap-1">
+                                    <div class="feature d-flex gap-2 align-items-center">
+                                        <img src="assets/icons/free_parking.png" alt="" class="position-relative">
+                                        <h6>Free Parking</h6>
+                                    </div>
+                                    <div class="feature d-flex gap-2 align-items-center">
+                                        <img src="assets/icons/free_breakfast.png" alt="" class="position-relative">
+                                        <h6>Free Breakfast</h6>
+                                    </div>
+                                    <div class="feature d-flex gap-2 align-items-center">
+                                        <img src="assets/icons/wifi.png" alt="" class="position-relative">
+                                        <h6>Free Wi-Fi</h6>
+                                    </div>
+                                    <div class="feature d-flex gap-2 align-items-center">
+                                        <img src="assets/icons/restaurant.png" alt="" class="position-relative">
+                                        <h6>Restaurant</h6>
+                                    </div>
+                                    <div class="feature d-flex gap-2 align-items-center">
+                                        <img src="assets/icons/fitness_center.png" alt="" class="position-relative">
+                                        <h6>Fitness Center</h6>
+                                    </div>
+                                    <div class="feature d-flex gap-2 align-items-center">
+                                        <img src="assets/icons/ac_unit.png" alt="" class="position-relative">
+                                        <h6>Air-conditioned</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="action-btns position-absolute top-0 end-0 d-flex gap-2">
+                                <button class="btn btn-outline-secondary"><i class="fas fa-trash-alt fa-md"></i></button>
+                                <button class="btn btn-outline-secondary"><i class="fas fa-edit fa-md"></i></button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Bootstrap Bundle -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Main JavaScript -->
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+:root {
+    --primary-color: #495E57;
+    --secondary-color: #F4CE14;
+    --dark-color: #45474B;
+    --dark-gray: #70757A;
+    --features-color: #5C6065;
+    --body-bg: #F5F7F8;
+    --light-gray: #C9CACC;
+    --white-color: #ffffff;
+    color: rgb(244, 207, 20);
+}
+#right img {
+    width: 100%;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+.navbar {
+    z-index: 1100;
+}
+.nav-link {
+    color: var(--dark-color);
+    transition: 0.2s;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+.btn-primary {
+    --bs-btn-color: var(--dark-color);
+    --bs-btn-bg: var(--secondary-color);
+    --bs-btn-border-color: var(--secondary-color);
+    --bs-btn-hover-color: var(--white-color);
+    --bs-btn-hover-bg: var(--primary-color);
+    --bs-btn-hover-border-color: var(--primary-color);
+    --bs-btn-active-color: var(--white-color);
+    --bs-btn-active-bg: var(--primary-color);
+    --bs-btn-active-border-color: var(--primary-color);
+    --bs-btn-disabled-color: rgba(69, 71, 75, 0.5);
+    --bs-btn-disabled-bg: rgba(244, 207, 20, 0.5);
+    --bs-btn-disabled-border-color: rgba(244, 207, 20, 0.5);
+    border-radius: 0;
+    font-weight: 600;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+main {
+    min-height: 100vh;
+    background-image: url('../images/bg.svg');
+}
+
+.container,
+.row {
+    min-height: inherit;
+}
+
+.row {
+    --bs-gutter-x: 0;
+}
+
+#dataIntery {
+    height: 100%;
+    padding-top: calc(58px + 3rem);
+    padding-bottom: 3rem;
+}
+
+#search {
+    padding: 2rem 0 2rem 5rem;
+}
+.search-sticky{
+    position: sticky;
+    top: 0;
+    padding-top: calc(58px + 3rem);
+    background: linear-gradient( rgba(245,247,248,0.90) 90%, rgba(245,247,248,1) 100%);
+    padding-left: 5rem;
+    z-index: 1050;
+}
+.upload-image {
+    width: calc(100% - 3rem);
+    height: 100px;
+    border: 2px dashed var(--primary-color);
+    border-radius: 0.5rem;
+}
+.upload-image .form-control:focus {
+    box-shadow: none;
+}
+#customFileInput {
+    display: none;
+}
+
+#customFileLabel {
+color: var(--primary-color);
+cursor: pointer;
+position: relative;
+}
+.upload-image img {
+    top: 1.3rem;
+}
+.hotel-overview > *, .hotel-features > *, .hotel-prices > *, #left .btn {
+    width: calc(100% - 3rem);
+}
+
+
+
+
+
+
+
+
+
+
+
+#left .form-control, #left select {
+    box-shadow: none;
+}
+#left .form-control:focus, #left select:focus {
+    border-color: var(--secondary-color);
+}
+.form-check-inline {
+    margin-right: 0.5rem;
+}
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.form-check-input:focus {
+    border-color: var(--primary-color);
+}
+.form-check-label:focus-visible {
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+#right .form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 .25rem rgba(244, 207, 20, 0.25);
+}
+#right .form-control {
+    padding-left: 1.5rem;
+    position: relative;
+    border-color: var(--secondary-color);
+}
+#right .card-img {
+    width: 40%;
+    overflow: hidden;
+}
+#right .card-img img {
+    border-radius: inherit;
+    transition: 0.3s;
+    object-fit: cover;
+    object-position: 0%;
+    cursor: pointer;
+}
+#right .card:hover .card-img img {
+    transform: scale(1.25);
+}
+#right .features img {
+    width: 0.9rem;
+    height: 0.9rem;
+    bottom: 0.5rem;
+    transform: translateY(25%);
+}
+#right .features h6 {
+    color: var(--dark-gray);
+    font-size: 14px;
+}
+#right .price {
+    background-color: rgba(244, 207, 20, 0.5);
+    width: fit-content;
+    color: var(--dark-color);
+}
+#right .card-content p {
+    color: var(--dark-gray);
+}
+#right .card-content h2 {
+    transition: 0.3s;
+    cursor: pointer;
+    width: fit-content;
+}
+#right .card-content .rating {
+    font-size: 14px;
+    color: var(--dark-gray);
+}
+
+.btn-outline-secondary {
+    --bs-btn-color: var(--light-gray);
+    --bs-btn-border-color: var(--light-gray);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--primary-color);
+    --bs-btn-hover-border-color: var(--primary-color);
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--primary-color);
+    --bs-btn-active-border-color: var(--primary-color);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(244, 207, 20, 0.25);
+    --bs-btn-disabled-color: #6c757d;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #6c757d;
+    --bs-gradient: none;
+    padding: 0.25rem 0.5rem;
+}
+#right .action-btns >:first-child:hover {
+    background-color: tomato;
+    color: #fff;
+    --bs-btn-hover-border-color: tomato;
+}
